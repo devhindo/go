@@ -21,8 +21,8 @@ jobs:
       with:
         go-version: 1.19
 
-    - name: Build
-      run: go build -v ./...
+    - name: Build library-system
+      run: go build -v ./library-system/.
 
-    - name: Test
-      run: go test -v ./...
+    - name: Test library-system
+      run: go test -v ./library-system/.

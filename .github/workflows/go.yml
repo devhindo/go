@@ -22,7 +22,7 @@ jobs:
         go-version: 1.19
 
     - name: Build library-system
-      run: cd library-system && go build -v .
+      run: cd projects/library-system && go build -v .
 
     - name: Test library-system
-      run: cd library-system && go test -v .
+      run: cd projects/library-system && go test -v .

@@ -5,7 +5,7 @@
 ### Offline DOCS
 
 ```bash
-#installation:
+#installation (Windows):
 go install golang.org/x/tools/cmd/godoc@latest
 # usage:
 godoc -http=:6060

@@ -11,6 +11,7 @@ go install golang.org/x/tools/cmd/godoc@latest
 godoc -http=:6060
 # open http://localhost:6060/
 ```
+l
 
 ### Online DOCS
 

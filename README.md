@@ -15,3 +15,4 @@ godoc -http=:6060
 ### Online DOCS
 
 - [devdocs.io/go](https://devdocs.io/go/)
+- https://github.com/softchris/golang-book

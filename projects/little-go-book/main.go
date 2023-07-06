@@ -1,5 +1,6 @@
 package main
 
 func main() {
-	println("hindo")
+	println("hind")
+	sub_main()
 }

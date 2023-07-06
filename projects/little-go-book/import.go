@@ -6,7 +6,7 @@ import (
 	"reflect"
 )
 
-func main() {
+func sub_main() {
 	if len(os.Args) != 2 {
 		os.Exit(1)
 	}

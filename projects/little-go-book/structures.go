@@ -5,6 +5,10 @@ type Saiyan struct {
 	Power int
 }
 
+func (s *Saiyan) Super() {
+	s.power += 10000
+}
+
 goku := Saiyan{
 	Name: "ahmed",
 	Power: 9000,

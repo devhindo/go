@@ -19,3 +19,13 @@ ob.power = 33
 
 ab = Saiyan{"ahmed",34}
 
+func NewSaiyan (name string, power int) *Saiyan {
+	return &Saiyan{
+		Name: name,
+		Power: power,
+	}
+}
+
+gouk := new(Saiyan)
+gouk2 := &Saiyan{}
+

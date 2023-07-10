@@ -17,3 +17,8 @@ l
 
 - [devdocs.io/go](https://devdocs.io/go/)
 - https://github.com/softchris/golang-book
+
+## cmds
+
+- init go project : `go mod init [project-name]`
+- run go project : `go run main.go`

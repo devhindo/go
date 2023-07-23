@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/devhindo/go/projects/sun/src/weather"
+	"sun/weather"
 )
 
 func main () {

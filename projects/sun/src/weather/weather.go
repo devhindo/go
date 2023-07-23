@@ -1,13 +1,22 @@
 package weather
 
 import (
+	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
 )
 
+type weather struct {
+	location string `json:"timezone"`
+	hourly []struct {
+		time []string `json:"time"`
+	}`json:"hourly"`
+	tempretures []float64 `json:"temperature_2m"`
+}
+
 func GetWeather() {
-	res, err := http.Get("https://api.open-meteo.com/v1/forecast?latitude=30.0626&longitude=31.2497&hourly=temperature_2m,relativehumidity_2m,showers,windspeed_180m&daily=temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,sunrise,sunset&timezone=Africa%2FCairo")
+	res, err := http.Get("https://api.open-meteo.com/v1/forecast?latitude=30.0626&longitude=31.2497&hourly=temperature_2m&timezone=Africa%2FCairo")
 	if err != nil {
 		panic(err)
 	}
@@ -20,5 +29,10 @@ func GetWeather() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(string(body))
+	var weather weather
+	err = json.Unmarshal(body, &weather)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(weather)
 }

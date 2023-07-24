@@ -34,6 +34,6 @@ func GetWeather() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(weather)
+	fmt.Println(weather.Hourly.Time[0])
 }
 

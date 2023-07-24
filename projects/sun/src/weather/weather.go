@@ -8,11 +8,11 @@ import (
 )
 
 type weather struct {
-	location string `json:"timezone"`
-	hourly []struct {
-		time []string `json:"time"`
+	Location string `json:"timezone"`
+	Hourly struct {
+		Time []string `json:"time"`
 	}`json:"hourly"`
-	tempretures []float64 `json:"temperature_2m"`
+	Tempretures []float64 `json:"temperature_2m"`
 }
 
 func GetWeather() {
@@ -36,3 +36,4 @@ func GetWeather() {
 	}
 	fmt.Println(weather)
 }
+
